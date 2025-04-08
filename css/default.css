@@ -4,6 +4,7 @@
 
 @theme {
     --color-primary: var(--new-primary);
-    --color-primary-dark: var(--new-dark-primary);
-    --color-secondary: #0000ff;
+    --color-primary-dark: var(--new-primary-dark);
+    --color-secondary: var(--new-secondary);
+    --color-secondary-dark: var(--new-secondary-dark)
 }
