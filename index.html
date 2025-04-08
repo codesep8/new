@@ -10,10 +10,11 @@
 </head>
 <body>
   <div class="dar bg-neutral-100 dark:bg-neutral-900">
+    <!--modern v2-->
     <header class="h-16 bg-primary dark:bg-primary-dark text-white font-bold">
   <div class="container mx-auto flex justify-between items-center h-full">
     <div class="flex gap-6 items-center">
-      <a href="/" class="ml-4 text-2xl">theseed</a>
+      <a href="/" class="max-md:ml-4 text-2xl">thetree</a>
       <div class="hidden md:flex text-lg gap-5 items-center">
         <a href="/RecentChanges" class="rounded-lg p-2 hover:bg-secondary dark:hover:bg-secondary-dark">
           <i class="fa-solid fa-clock"></i>&nbsp;
@@ -30,6 +31,11 @@
       </div>
     </div>
     <div class="flex gap-4 items-center">
+      <div class="hidden md:flex text-black dark:text-white">
+        <input class="rounded-l-lg bg-neutral-100 h-10 p-2" placeholder="여기에 검색...">
+        <button class="h-10 px-1 bg-neutral-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="h-10 px-2 rounded-r-lg bg-neutral-100"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
       <img class="md:mr-2 inline-block size-10 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"/>
       <button class="mr-4 md:hidden rounded text-2xl hover:bg-secondary dark:hover:bg-secondary-dark">
         <i class="fa-solid fa-bars"></i>
@@ -37,9 +43,15 @@
     </div>
   </div>
 </header>
+<div class="bg-yellow-300 h-10">
+<div class="container mx-auto flex items-center h-full gap-2">
+  <i class="max-md:ml-4 fa-solid fa-bullhorn"></i>
+  notice
+</div>
+</div>
     <main class="flex justify-center">
   <div class="flex flex-col md:flex-row gap-4 md:m-4 text-black dark:text-white container mx-auto items-start">
-    <div class="bg-white dark:bg-black rounded-lg shadow-lg w-full md:w-4/5 min-h-[100vh] p-6">
+    <div class="bg-white dark:bg-black rounded-lg shadow-lg w-full md:w-5/7 min-h-[100vh] p-6">
       <div class="flex flex-col md:flex-row md:items-center mb-3">
         <div class="flex flex-col">
           <h1 class="text-3xl font-bold hover:underline decoration-2">
@@ -49,24 +61,25 @@
         </div>
       </div>
     </div>
-    <div class="bg-white dark:bg-black rounded-lg shadow-lg w-full md:w-1/5 p-3">
+    <div class="bg-white dark:bg-black rounded-lg shadow-lg w-full md:w-2/7 p-3">
       <h1 class="text-xl font-bold mb-2">
         <i class="fa-solid fa-clock"></i>
         최근 변경
       </h1>
+
     </div>
   </div>
 </main>
     <footer class="bg-white dark:bg-black border-t h-32 text-black dark:text-white p-5">
-      theree | new
+      theree | modern
     </footer>
   </div>
   <style>
     :root {
-      --new-primary: #0066ff;
-      --new-primary-dark: #003380;
-      --new-secondary: #0077ff;
-      --new-secondary-dark: #004480;
+      --modern-primary: #0066ff;
+      --modern-primary-dark: #003380;
+      --modern-secondary: #0077ff;
+      --modern-secondary-dark: #004480;
     }
   </style>
 </body>

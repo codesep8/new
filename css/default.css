@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-primary: var(--new-primary);
-    --color-primary-dark: var(--new-primary-dark);
-    --color-secondary: var(--new-secondary);
-    --color-secondary-dark: var(--new-secondary-dark)
+    --color-primary: var(--modern-primary);
+    --color-primary-dark: var(--modern-primary-dark);
+    --color-secondary: var(--modern-secondary);
+    --color-secondary-dark: var(--modern-secondary-dark)
 }
