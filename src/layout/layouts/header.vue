@@ -1,22 +1,23 @@
 <template>
     <header class="h-15 bg-blue-500 dark:bg-blue-700 text-white font-bold flex items-center">
         <nav class="flex justify-between items-center w-full">
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-3">
                 <a href="/" class="ml-6 text-2xl font-bold">theseed</a>
-                <a href="/RecentChanges" class="nav-links">
+                <a href="/RecentChanges" class="nav-links m-3 rounded-xl hover:bg-blue-600">
                     <i class="fa-solid fa-clock"></i>
                     최근 변경
                 </a>
-                <a href="/RecentDiscuss" class="nav-links">
+                <a href="/RecentDiscuss" class="nav-links m-3 rounded-xl hover:bg-blue-600">
                     <i class="fa-solid fa-comment"></i>
                     최근 토론
                 </a>
-                <div class="nav-links">
+                <div class="nav-links m-3 rounded-xl hover:bg-blue-600">
                     <i class="fa-solid fa-toolbox"></i>
                     도구
                 </div>
             </div>
             <div class="flex gap-4 items-center">
+                <Search />
                 <div class="nav-links text-black">
                     <input class="rounded-l-lg bg-neutral-100 h-9 p-2" placeholder="여기에 검색...">
                     <button class="h-9 px-1 bg-neutral-100"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -38,3 +39,7 @@
 		}
 }
 </style>
+
+<script setup lang="ts">
+import Search from "./search.vue";
+</script>
