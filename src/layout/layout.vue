@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-neutral-100 dark:bg-neutral-900">
+    <div class="bg-neutral-100 dark:bg-neutral-900 text-black dark:text-white">
         <!--modern v2-->
         <Header />
         <Banner />
         <main class="m-4 min-h-[100vh]">
-            hid
+            content
         </main>
         <Footer />
     </div>
@@ -12,6 +12,7 @@
 
 <style>
 @import "./css/output.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
 </style>
 
 <script setup lang="ts">

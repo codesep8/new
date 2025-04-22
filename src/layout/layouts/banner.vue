@@ -1,5 +1,6 @@
 <template>
-    <div>
-        banner
+    <div class="h-10 bg-yellow-600 text-white flex items-center gap-3">
+        <i class="fa-solid fa-triangle-exclamation ml-6"></i>
+        <p>notice</p>
     </div>
 </template>
