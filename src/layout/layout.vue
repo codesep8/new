@@ -3,9 +3,7 @@
         <!--modern v2-->
         <Header />
         <Banner />
-        <main class="m-4 min-h-[100vh]">
-            content
-        </main>
+        <Main />
         <Footer />
     </div>
 </template>
@@ -18,5 +16,6 @@
 <script setup lang="ts">
 import Header from "./layouts/header.vue";
 import Banner from "./layouts/banner.vue";
+import Main from "./layouts/main.vue";
 import Footer from "./layouts/footer.vue";
 </script>
