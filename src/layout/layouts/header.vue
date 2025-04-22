@@ -17,11 +17,13 @@
                 </div>
             </div>
             <div class="flex gap-4 items-center">
-                <div class="search-bar text-black">
-                    <input class="rounded-l-lg bg-neutral-200 h-9 p-2" placeholder="여기에 검색...">
-                    <button class="h-9 px-1 bg-neutral-200"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <button class="h-9 px-2 rounded-r-lg bg-neutral-200"><i class="fa-solid fa-chevron-right"></i></button>
+                <!--검색 시작-->
+                <div class="nav-links search-bar text-black">
+                    <input class="rounded-l-lg bg-neutral-100 h-9 p-2" placeholder="여기에 검색...">
+                    <button class="h-9 px-1 bg-neutral-100"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="h-9 px-2 rounded-r-lg bg-neutral-100"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
+                <!--검색 끝-->
                 <img class="md:mr-6 inline-block size-9 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"/>
                 <button class="mr-4 md:hidden rounded text-2xl hover:bg-secondary dark:hover:bg-secondary-dark">
                     <i class="fa-solid fa-bars"></i>
@@ -32,11 +34,13 @@
 </template>
 
 <style scoped>
+/* Default styles for md and above */
 .nav-links {
     display: flex;
     align-items: center;
 }
 
+/* Media query for md and below (max-width: 767px) */
 @media (max-width: 767px) {
     .nav-links {
         display: none;
@@ -47,7 +51,8 @@
         top: 60px; /* Adjust based on header height (h-15 ≈ 60px) */
         left: 0;
         width: 100%; /* Full width */
-        /*background-color: #e5e7eb; Match bg-neutral-100 */
+        background-color: #e5e7eb; /* Match bg-neutral-100 */
+        z-index: 10; /* Ensure it stays above other content */
     }
     .search-bar input {
         height: 40px; /* h-10 */
@@ -60,6 +65,10 @@
     }
     .search-bar button:last-child {
         border-radius: 0; /* Ensure the last button has no rounded corners */
+    }
+    /* Add padding to the body to prevent content from being covered */
+    body {
+        padding-top: 100px; /* Header height (60px) + search bar height (40px) */
     }
 }
 </style>
