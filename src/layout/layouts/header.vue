@@ -18,11 +18,6 @@
             </div>
             <div class="flex gap-4 items-center">
                 <Search />
-                <div class="search-bar">
-                    <input class="rounded-l-xl p-2" placeholder="여기에 검색...">
-                    <button class="px-1"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <button class="px-2 rounded-r-xl"><i class="fa-solid fa-chevron-right"></i></button>
-                </div>
                 <img class="md:mr-6 inline-block size-9 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"/>
                 <button class="mr-4 md:hidden rounded text-2xl hover:bg-secondary dark:hover:bg-secondary-dark">
                     <i class="fa-solid fa-bars"></i>
@@ -33,12 +28,6 @@
 </template>
 
 <style>
-.search-bar > * {
-    background-color: var(--color-neutral-200);
-    color: black;
-    height: 36px;
-}
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -48,26 +37,6 @@
 @media (max-width: 48rem) {
     .nav-links {
         display: none;
-    }
-    .search-bar {
-        display: flex;
-        position: absolute;
-        top: 52px;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .search-bar input {
-        height: 37px;
-        flex-grow: 1;
-        border-radius: 0;
-    }
-    .search-bar button {
-        height: 37px; /* h-10 */
-        border-radius: 0; /* Remove rounded corners */
-    }
-    .search-bar button:last-child {
-        border-radius: 0;
     }
 }
 </style>
