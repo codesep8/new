@@ -41,11 +41,6 @@
 }
 </style>
 
-<script>
+<script setup lang="ts">
 import Search from "./search.vue"
-export default {
-    components: {
-        Search
-    }
-}
 </script>
