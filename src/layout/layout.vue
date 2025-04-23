@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-neutral-100 dark:bg-neutral-900 text-black dark:text-white">
+    <div class="bg-white dark:bg-black text-black dark:text-white">
         <!--modern v2-->
         <Header />
         <Banner />

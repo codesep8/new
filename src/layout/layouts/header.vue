@@ -2,17 +2,17 @@
     <header class="h-13 bg-blue-500 text-white dark:bg-blue-600 font-bold flex items-center">
         <nav class="flex justify-between items-center w-full">
             <div class="flex items-center gap-3">
-                <a href="/" class="ml-6 text-2xl">theseed</a>
+                <a href="/" class="ml-6 text-2xl">thetree</a>
                 <a href="/RecentChanges" class="nav-links m-3 rounded-xl hover:bg-blue-600">
-                    <i class="text-xl fa-solid fa-clock"></i>
+                    <i class="text-lg fa-solid fa-clock"></i>
                     최근 변경
                 </a>
                 <a href="/RecentDiscuss" class="nav-links m-3 rounded-xl hover:bg-blue-600">
-                    <i class="text-xl fa-solid fa-comment"></i>
+                    <i class="text-lg fa-solid fa-comment"></i>
                     최근 토론
                 </a>
                 <div class="nav-links m-3 rounded-xl hover:bg-blue-600">
-                    <i class="text-xl fa-solid fa-toolbox"></i>
+                    <i class="text-lg fa-solid fa-toolbox"></i>
                     도구
                 </div>
             </div>
